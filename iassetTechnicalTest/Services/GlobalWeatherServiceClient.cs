@@ -61,9 +61,10 @@ namespace iassetTechnicalTest.Services
         /// <param name="strCityName"></param>
         /// <param name="strcountryName"></param>
         /// <returns>returns weather details</returns>
+        [System.Obsolete("GetWeather is deprecated due to globalweather.GetWeather is not rturning any dat, please use GetWeatherFromExternalAPI instead.")]
         public string GetWeather(string strCityName, string strcountryName)
         {
-            //[System.Obsolete("GetWeather is deprecated due to globalweather.GetWeather is not rturning any dat, please use GetWeatherFromExternalAPI instead.")]
+            
             mLog.Info("Calling GlobalWeatherServiceClient.GetWeather...");
             try
             {

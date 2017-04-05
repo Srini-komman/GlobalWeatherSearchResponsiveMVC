@@ -59,9 +59,9 @@ namespace iassetTechnicalTest.ServiceAgent
         /// <param name="strCityName"></param>
         /// <param name="strCountryName"></param>
         /// <returns>wether details</returns>
+        [System.Obsolete("GetWeather is deprecated due to globalweather.GetWeather is not rturning any data")]
         public string GetWeather(string strCityName, string strCountryName)
         {
-            //[System.Obsolete("GetWeather is deprecated due to globalweather.GetWeather is not rturning any data")]
             mLog.Info("Calling GlobalWeatherServiceAgent.GetWeather...");
 
             try
