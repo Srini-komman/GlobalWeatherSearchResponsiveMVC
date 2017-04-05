@@ -1,0 +1,50 @@
+﻿<div>
+    <div class="row citysearch">
+        <label for="citySelect">Select City: </label>
+        <select name="citySelect" class="citylist" id="citySelect" ng-model="selectedCity" data-ng-options="city for city in cities" ng-change="getweather(selectedCity, countryName)">
+            <option value="">Please select the city</option>
+        </select>
+    </div>
+    <div class="row weather-alternative-row">
+        <div class="col-md-6">
+            <label>Location</label>
+        </div>
+        <div class="col-md-6">
+            {{weather.Location}}
+        </div>
+    </div>
+    <div class="row weather-row">
+        <div class="col-md-6">
+            <label>Wind</label>
+        </div>
+        <div class="col-md-6">
+            {{weather.Wind}}
+        </div>
+    </div>
+    <div class="row weather-alternative-row">
+        <div class="col-md-6">
+            <label>Visibility</label>
+        </div>
+        <div class="col-md-6">
+            {{weather.Visibility}}
+        </div>
+    </div>
+    <div class="row weather-row">
+        <div class="col-md-6">
+            <label>Temperature</label>
+        </div>
+        <div class="col-md-6">
+            {{weather.Temperature}}
+        </div>
+    </div>
+    <div class="row weather-alternative-row">
+        <div class="col-md-6">
+            <label>Pressure</label>
+        </div>
+        <div class="col-md-6">
+            {{weather.Pressure}}
+        </div>
+    </div>
+    
+    
+</div>

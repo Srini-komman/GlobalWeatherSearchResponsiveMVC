@@ -1,0 +1,30 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewBag.Title = "View1";
+}
+<form name="myform" ng-app="globalWeatherApp">
+    <div>
+        <div ng-controller="globalWeatherController">
+            <div class="row searchbox">
+                <div class="col-md-3">
+                    <div class="input-group add-on">
+                        <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text" ng-model="countryName" ng-required="true">
+                        <div class="input-group-btn">
+                            <button class="btn btn-default" type="submit" ng-click='myform.$valid && getcities(countryName)'><i class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row weather">
+                <div class="col-md-3">
+                    <global-weather></global-weather>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</form>
+
