@@ -10,8 +10,16 @@ using iassetTechnicalTest.Models;
 
 namespace iassetTechnicalTest.Helpers
 {
+    /// <summary>
+    /// This class contains helper shared methods that can be used in the application
+    /// </summary>
     public class GlobalWeatherHelper
     {
+        /// <summary>
+        /// This fiction is used to convert xml message string into json string fromat
+        /// </summary>
+        /// <param name="strXMLDoc"></param>
+        /// <returns></returns>
         public static string ConvertXMLToJSON(string strXMLDoc)
         {
             // To convert an XML node contained in string xml into a JSON string   
@@ -29,6 +37,11 @@ namespace iassetTechnicalTest.Helpers
             return citiesjsonText;
         }
 
+        /// <summary>
+        /// This fiction is used to map json message into model object called Weather
+        /// </summary>
+        /// <param name="strJson"></param>
+        /// <returns></returns>
         public static Weather PopulateWeatherModelFromJsonText(string strJson)
         {
             try

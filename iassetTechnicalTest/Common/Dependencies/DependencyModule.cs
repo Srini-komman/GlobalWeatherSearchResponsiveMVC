@@ -9,6 +9,9 @@ using iassetTechnicalTest.ServiceAgent.Interfaces;
 using iassetTechnicalTest.Services;
 namespace iassetTechnicalTest.Common.Dependencies
 {
+    /// <summary>
+    /// This class is used to register all the dependencies with Autofac dependency container
+    /// </summary>
     public class DependencyModule : Module
     {
         protected override void Load(ContainerBuilder builder)

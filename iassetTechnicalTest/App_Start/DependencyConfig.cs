@@ -5,9 +5,9 @@ using iassetTechnicalTest.Common.Dependencies;
 
 namespace iassetTechnicalTest
 {
-    public class AutofacConfig
+    public class DependencyConfig
     {
-        public static void ConfigureContainer()
+        public static void ConfigureAutofacContainer()
         {
             var builder = new ContainerBuilder();
 
