@@ -15,7 +15,8 @@ namespace iassetTechnicalTest
                       "~/Scripts/angular.min.js",
                       "~/Scripts/angular-route.min.js",
                       "~/Scripts/globalweatherapp.js")
-                      .IncludeDirectory("~/Scripts/Controllers", "*.js")
+                      .IncludeDirectory("~/Scripts/shared", "*.js")
+                      .IncludeDirectory("~/Scripts/controllers", "*.js")
                       .IncludeDirectory("~/Scripts/directives", "*.js")
                       .IncludeDirectory("~/Scripts/factories", "*.js"));
         }

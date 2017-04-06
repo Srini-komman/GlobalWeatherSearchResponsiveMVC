@@ -1,14 +1,15 @@
 ﻿'use strict';
 
 // Declare app level module which depends on views, and controllers
-angular.module('globalWeatherApp', ['ngRoute']).
-config(['$routeProvider', function ($routeProvider) {
-    $routeProvider
-				.when('/Weather', {
-				    templateUrl: 'Weather/Index'
-				    //controller: 'CountryListCtrl'
-				})
-				.otherwise({
-				    redirectTo: '/'
-				})
+var app = angular.module("globalWeatherApp", ['ngRoute', 'sharedServices']).
+    config(['$routeProvider', '$httpProvider', function ($routeProvider, $httpProvider) {
+        $routeProvider
+                    .when('/Weather', {
+                        templateUrl: 'Weather/Index'
+                    })
+                    .otherwise({
+                        redirectTo: '/'
+                    })
 }]);
+
+

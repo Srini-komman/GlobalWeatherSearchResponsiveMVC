@@ -53,3 +53,15 @@
   background-color:#dae5f4;
 }
 
+#spinner{
+  top:7em;
+  left:12em;
+  position:fixed;
+  background-color:#666;
+  background-repeat:no-repeat;
+  background-position:center;
+  z-index:10000000;
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
