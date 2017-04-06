@@ -8,7 +8,7 @@ function globalWeatherFactory($http) {
     function getcities(country, successcallback, errorcallback) {
         $http({
             method: 'GET',
-            url: '/Weather/Cities',
+            url: '/Weather/GetCities',
             params: {
                 countryname: country
             },
